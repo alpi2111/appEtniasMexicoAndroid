@@ -1,9 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeLoginActivity">
+    tools:context=".HomeLoginActivity"
+    android:background="@color/colorPrimary">
 
-</android.support.constraint.ConstraintLayout>
+    <!--<ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:alpha="0.6"
+        android:contentDescription="@string/etnias"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/etnias1" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageSwitcher
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/isEtnias"
+            android:alpha="0.6">
+        </ImageSwitcher>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Etnias de México"
+        android:textColor="@color/colorWhite"
+        android:textSize="80sp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="50"
+            android:background="@color/colorPrimary"
+            android:text="Register"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="50"
+            android:background="@color/colorPrimaryDark"
+            android:text="Login"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp" />
+    </LinearLayout>
+</RelativeLayout>
