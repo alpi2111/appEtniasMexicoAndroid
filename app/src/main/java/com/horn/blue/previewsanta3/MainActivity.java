@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //guardarIsLogin("No");
+        guardarIsLogin("Yes");
         setContentView(R.layout.activity_main);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -24,13 +24,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if (!cargarPref()) {
-                    Intent intentHome = new Intent(getApplicationContext(), HomeLoginActivity.class);
+                    Intent intentHome = new Intent(MainActivity.this, HomeLoginActivity.class);
                     startActivity(intentHome);
                     finish();
                 } else {
-                   /* Intent intent = new Intent(getApplicationContext(), HomeFinal.class);
+                   Intent intent = new Intent(MainActivity.this, PrincipalActivity.class);
                     startActivity(intent);
-                    finish();*/
+                    finish();
                 }
             }
         }, SPLASH_TIME);
