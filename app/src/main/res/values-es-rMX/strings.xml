@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Étnias de México</string>
+    <string name="title_activity_principal">Actividad Principal</string>
+    <string name="navigation_drawer_open">Abrir Menú de Navegación</string>
+    <string name="navigation_drawer_close">Cerar Menú de Navegación</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.com</string>
+    <string name="nav_header_desc">Cabecera de Navegación</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="login_label">Iniciar Sesión</string>
+    <string name="register_label">Registrarse</string>
+</resources>

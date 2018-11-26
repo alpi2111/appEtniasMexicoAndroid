@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.horn.blue.previewsanta3">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,9 +25,11 @@
             android:theme="@style/AppThemeNoBar" />
         <activity
             android:name=".LoginActivity"
+            android:label="@string/login_label"
             android:parentActivityName=".HomeLoginActivity" />
         <activity
             android:name=".RegisterActivity"
+            android:label="@string/register_label"
             android:parentActivityName=".HomeLoginActivity" />
         <activity
             android:name=".PrincipalActivity"

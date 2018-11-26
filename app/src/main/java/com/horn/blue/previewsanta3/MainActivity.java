@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        guardarIsLogin("Yes");
+        //guardarIsLogin("No");
         setContentView(R.layout.activity_main);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -36,18 +36,15 @@ public class MainActivity extends AppCompatActivity {
         }, SPLASH_TIME);
     }
 
-    private void guardarIsLogin(String x) {
+    /*private void guardarIsLogin(String x) {
         SharedPreferences sharedPreferences = getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("isLogin", x);
-        editor.commit();
-    }
+        editor.apply();
+    }*/
 
     private boolean cargarPref() {
         SharedPreferences sharedPreferences = getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
-        if (sharedPreferences.getString("isLogin", "No").equals("Yes")) {
-            return true;
-        }
-        return false;
+        return sharedPreferences.getString("isLogin", "No").equals("Yes");//true
     }
 }

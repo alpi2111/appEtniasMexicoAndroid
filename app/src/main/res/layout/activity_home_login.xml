@@ -7,19 +7,6 @@
     tools:context=".HomeLoginActivity"
     android:background="@color/colorPrimary">
 
-    <!--<ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:alpha="0.6"
-        android:contentDescription="@string/etnias"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/etnias1" />-->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -51,11 +38,11 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnRegister"
+            android:id="@+id/btnRegistro"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="50"
-            android:background="@color/colorPrimary"
+            android:background="@color/colorYellow"
             android:text="Register"
             android:textColor="@color/colorWhite"
             android:textSize="24sp" />
@@ -65,7 +52,7 @@
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="50"
-            android:background="@color/colorPrimaryDark"
+            android:background="@color/colorBlueDark"
             android:text="Login"
             android:textColor="@color/colorWhite"
             android:textSize="24sp" />
